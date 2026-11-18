@@ -1,0 +1,391 @@
+/*
+ * quiet.md theme: Islands Dark
+ *
+ * Couleurs du thème Islands Dark de JetBrains (IntelliJ 2026.2) :
+ * fond #191A1C, texte #BCBEC4, accent bleu #71A1FE, palette rouge/orange/
+ * jaune/vert/bleu/violet des Islands, coloration de code du schéma Islands Dark.
+ *
+ * Quiet.md inverse les couleurs des thèmes en mode sombre : les valeurs ci-dessous
+ * sont pré-inversées pour retomber sur Islands Dark une fois l'appli en sombre.
+ */
+
+:root {
+  --theme-name: "Islands Dark";
+  --theme-author: "quiet.md";
+  --theme-description: "Couleurs du thème Islands Dark de JetBrains.";
+  /* 块的画法：craft 或 feishu */
+  --theme-base: craft;
+
+  /* Obsidian 的基础变量，下面的规则用 var() 引用 */
+  --interactive-accent: #71a1fe;
+  --text-accent-hover: #010030;
+  --text-normal: #3e4044;
+  --text-muted: #585b60;
+  --text-faint: #7d8188;
+  --background-primary-alt: #f3f6fa;
+  --background-modifier-border: #d8dae2;
+
+  /* 文字颜色 */
+  --color-gray: var(--text-muted);
+  --color-red: #f57e84;
+  --color-orange: #fca489;
+  --color-yellow: #d79839;
+  --color-green: #004e27;
+  --color-blue: #71a1fe;
+  --color-purple: #a894f6;
+
+  /* 文字高亮 */
+  --highlight-light-gray: rgba(159, 162, 168, 0.2);
+  --highlight-light-red: rgba(245, 126, 132, 0.2);
+  --highlight-light-orange: rgba(225, 140, 113, 0.2);
+  --highlight-light-yellow: rgba(213, 150, 55, 0.4);
+  --highlight-light-green: rgba(109, 176, 131, 0.2);
+  --highlight-light-blue: rgba(113, 161, 254, 0.2);
+  --highlight-light-purple: rgba(168, 148, 246, 0.2);
+  --highlight-medium-gray: rgba(159, 162, 168, 0.35);
+  --highlight-gray: rgba(159, 162, 168, 0.35);
+  --highlight-red: rgba(245, 126, 132, 0.35);
+  --highlight-orange: rgba(225, 140, 113, 0.35);
+  --highlight-yellow: rgba(213, 150, 55, 0.35);
+  --highlight-green: rgba(109, 176, 131, 0.35);
+  --highlight-blue: rgba(113, 161, 254, 0.35);
+  --highlight-purple: rgba(168, 148, 246, 0.35);
+
+  /* 块背景 */
+  --background-light-gray: #585b601a;
+  --background-light-red: #f57e841a;
+  --background-light-orange: #fca4891a;
+  --background-light-yellow: #d798391a;
+  --background-light-green: #004e271a;
+  --background-light-blue: #71a1fe1a;
+  --background-light-purple: #a894f61a;
+  --background-medium-gray: #585b6033;
+  --background-gray: #585b6033;
+  --background-medium-red: #f57e8433;
+  --background-medium-orange: #fca48933;
+  --background-medium-yellow: #d7983933;
+  --background-medium-green: #004e2733;
+  --background-medium-blue: #71a1fe33;
+  --background-medium-purple: #a894f633;
+
+  /* 高亮块底色 */
+  --callout-light-gray: #585b601a;
+  --callout-light-red: #f57e841a;
+  --callout-light-orange: #fca4891a;
+  --callout-light-yellow: #d798391a;
+  --callout-light-green: #004e271a;
+  --callout-light-blue: #71a1fe1a;
+  --callout-light-purple: #a894f61a;
+  --callout-medium-gray: #585b6033;
+  --callout-gray: #585b6033;
+  --callout-medium-red: #f57e8433;
+  --callout-medium-orange: #fca48933;
+  --callout-medium-yellow: #d7983933;
+  --callout-medium-green: #004e2733;
+  --callout-medium-blue: #71a1fe33;
+  --callout-medium-purple: #a894f633;
+
+  /* 高亮块边框 */
+  --border-gray: #585b60;
+  --border-red: #f57e84;
+  --border-orange: #fca489;
+  --border-yellow: #d79839;
+  --border-green: #004e27;
+  --border-blue: #71a1fe;
+  --border-purple: #a894f6;
+
+  /* 其它界面细节（文档内的选中、悬停、表格工具等） */
+  --token-text-caption: var(--text-muted);
+  --token-text-placeholder: var(--text-faint);
+  --token-block-placeholder: var(--text-faint);
+  --token-text-disabled: #b4b8c0;
+  --token-text-code: #3e4044;
+  --token-primary-500: var(--interactive-accent);
+  --token-primary-fill-1: #71a1fe1a;
+  --token-bg-overlay: #ebeef4;
+  --token-line-divider: #0b0b0b10;
+  --token-line-border: #0b0b0b17;
+  --token-fill-hover: #0b0b0b10;
+  --token-fill-hover-strong: #0b0b0b10;
+  --token-fill-pressed: #0b0b0b21;
+  --token-fill-turninto-active: #71a1fe24;
+  --token-block-hover: #71a1fe0f;
+  --token-block-selected: #71a1fe26;
+  --token-handle-active: #0b0b0b10;
+  --token-size-cell: #ebeef4;
+  --token-size-cell-border: #d8dae2;
+  --token-size-cell-active: #71a1fe99;
+  --token-size-cell-disabled: #c7dfff;
+  --token-swatch-border: #0b0b0b17;
+  --token-block-bg-area: #0b0b0b08;
+  --token-scrollbar-thumb: #0b0b0b3b;
+  --token-shadow: #ffffff80;
+  --token-code-hover-ring: #71a1fe59;
+  --token-pinned: var(--interactive-accent);
+  --token-table-bar-hover: #d8dae2;
+  --token-table-bar-selected: #71a1fe40;
+  --token-danger-bar: #e4656e;
+  --token-danger-cell: #f57e841f;
+  --token-danger: #f57e84;
+  --token-sidebar-text: #2e3034;
+  --token-sidebar-hover: #0b0b0b10;
+  --token-sidebar-selected: #0b0b0b17;
+  --token-sidebar-section: #585b60;
+  --token-button-border: #0b0b0b17;
+  --token-code-gutter-line: var(--background-modifier-border);
+  --token-caption: var(--text-muted);
+  --token-menu-highlight: var(--interactive-accent);
+  --token-popover-bg: #ebeef4;
+}
+
+.page {
+  background-color: #feffff;
+  color: var(--text-normal);
+  font-family: system-ui;
+  font-size: 16px;
+  line-height: 1.5;
+  max-width: 700px;
+  caret-color: var(--text-normal);
+}
+
+::selection {
+  background-color: #b2dcff;
+}
+
+p {
+  margin-bottom: 16px;
+}
+
+.title {
+  font-family: system-ui;
+  font-size: 1.802em;
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--text-normal);
+}
+
+h1 {
+  font-family: system-ui;
+  font-size: 1.802em;
+  line-height: 1.2;
+  font-weight: 700;
+  color: inherit;
+  margin-top: 32px;
+  margin-bottom: 12px;
+}
+
+h2 {
+  font-family: system-ui;
+  font-size: 1.602em;
+  line-height: 1.2;
+  font-weight: 600;
+  color: inherit;
+  margin-top: 28px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-family: system-ui;
+  font-size: 1.424em;
+  line-height: 1.3;
+  font-weight: 600;
+  color: inherit;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+h4 {
+  font-family: system-ui;
+  font-size: 1.266em;
+  line-height: 1.4;
+  font-weight: 600;
+  color: inherit;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+h5 {
+  font-family: system-ui;
+  font-size: 1.125em;
+  line-height: 1.5;
+  font-weight: 600;
+  color: inherit;
+  margin-top: 18px;
+  margin-bottom: 8px;
+}
+
+h6 {
+  font-family: system-ui;
+  font-size: 1em;
+  line-height: 1.5;
+  font-weight: 600;
+  color: inherit;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+h7 {
+  font-family: system-ui;
+  font-size: 1em;
+  line-height: 1.5;
+  font-weight: 600;
+  color: inherit;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+h8 {
+  font-family: system-ui;
+  font-size: 1em;
+  line-height: 1.5;
+  font-weight: 600;
+  color: inherit;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+h9 {
+  font-family: system-ui;
+  font-size: 1em;
+  line-height: 1.5;
+  font-weight: 600;
+  color: inherit;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+strong {
+  font-weight: 600;
+  color: inherit;
+}
+
+a {
+  color: var(--interactive-accent);
+  text-decoration: underline;
+  text-decoration-color: inherit;
+}
+
+a:hover {
+  color: var(--text-accent-hover);
+}
+
+code {
+  color: var(--text-muted);
+  background-color: var(--background-primary-alt);
+  border-color: transparent;
+  border-radius: 4px;
+  padding-left: 4px;
+}
+
+pre {
+  font-family: ui-monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text-muted);
+  background-color: var(--background-primary-alt);
+  border-color: transparent;
+  border-radius: 4px;
+}
+
+.line-numbers {
+  display: none;
+  color: var(--text-faint);
+  background-color: var(--background-primary-alt);
+}
+
+blockquote {
+  border-left-width: 2px;
+  border-left-color: var(--interactive-accent);
+  padding-left: 26px;
+  color: inherit;
+  font-style: normal;
+}
+
+ul {
+  padding-left: 28px;
+}
+
+ul li::marker {
+  color: var(--text-faint);
+}
+
+ol li::marker {
+  color: var(--text-muted);
+}
+
+.task {
+  width: 16px;
+  border-radius: 4px;
+  border-color: var(--text-faint);
+}
+
+.task:checked {
+  background-color: #00309c;
+  color: #0b0b0b;
+}
+
+.task-done {
+  color: var(--text-muted);
+  text-decoration: line-through;
+}
+
+hr {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: var(--background-modifier-border);
+}
+
+table {
+  font-size: 15px;
+  line-height: 22px;
+  border-color: var(--background-modifier-border);
+  border-radius: 0px;
+}
+
+th {
+  background-color: var(--background-primary-alt);
+}
+
+.callout {
+  border-radius: 4px;
+  border-width: 0px;
+  padding-top: 12px;
+  padding-left: 20px;
+}
+
+/* Coloration du code : schéma Islands Dark */
+.token.comment {
+  color: var(--text-faint);
+}
+
+.token.keyword {
+  color: #662f0c;
+}
+
+.token.tag {
+  color: #4e3500;
+}
+
+.token.string {
+  color: #87c98f;
+}
+
+.token.number {
+  color: #4cc5d1;
+}
+
+.token.boolean {
+  color: #662f0c;
+}
+
+.token.class-name {
+  color: #3e4044;
+}
+
+.token.attr-name {
+  color: #434343;
+}
+
+.token.function {
+  color: #56a8f5;
+}
