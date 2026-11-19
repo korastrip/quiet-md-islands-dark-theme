@@ -1,22 +1,8 @@
-/*
- * quiet.md theme: Islands Dark
- *
- * Couleurs du thème Islands Dark de JetBrains (IntelliJ 2026.2) :
- * fond #191A1C, texte #BCBEC4, accent bleu #71A1FE, palette rouge/orange/
- * jaune/vert/bleu/violet des Islands, coloration de code du schéma Islands Dark.
- *
- * Quiet.md inverse les couleurs des thèmes en mode sombre : les valeurs ci-dessous
- * sont pré-inversées pour retomber sur Islands Dark une fois l'appli en sombre.
- */
-
 :root {
   --theme-name: "Islands Dark";
-  --theme-author: "quiet.md";
-  --theme-description: "Couleurs du thème Islands Dark de JetBrains.";
-  /* 块的画法：craft 或 feishu */
+  --theme-author: "d3ller";
+  --theme-description: "Theme color from Jetbrains Islands Dark";
   --theme-base: craft;
-
-  /* Obsidian 的基础变量，下面的规则用 var() 引用 */
   --interactive-accent: #71a1fe;
   --text-accent-hover: #010030;
   --text-normal: #3e4044;
@@ -25,7 +11,6 @@
   --background-primary-alt: #f3f6fa;
   --background-modifier-border: #d8dae2;
 
-  /* 文字颜色 */
   --color-gray: var(--text-muted);
   --color-red: #f57e84;
   --color-orange: #fca489;
@@ -34,7 +19,7 @@
   --color-blue: #71a1fe;
   --color-purple: #a894f6;
 
-  /* 文字高亮 */
+  
   --highlight-light-gray: rgba(159, 162, 168, 0.2);
   --highlight-light-red: rgba(245, 126, 132, 0.2);
   --highlight-light-orange: rgba(225, 140, 113, 0.2);
@@ -51,7 +36,6 @@
   --highlight-blue: rgba(113, 161, 254, 0.35);
   --highlight-purple: rgba(168, 148, 246, 0.35);
 
-  /* 块背景 */
   --background-light-gray: #585b601a;
   --background-light-red: #f57e841a;
   --background-light-orange: #fca4891a;
@@ -67,8 +51,6 @@
   --background-medium-green: #004e2733;
   --background-medium-blue: #71a1fe33;
   --background-medium-purple: #a894f633;
-
-  /* 高亮块底色 */
   --callout-light-gray: #585b601a;
   --callout-light-red: #f57e841a;
   --callout-light-orange: #fca4891a;
@@ -85,7 +67,6 @@
   --callout-medium-blue: #71a1fe33;
   --callout-medium-purple: #a894f633;
 
-  /* 高亮块边框 */
   --border-gray: #585b60;
   --border-red: #f57e84;
   --border-orange: #fca489;
@@ -94,7 +75,6 @@
   --border-blue: #71a1fe;
   --border-purple: #a894f6;
 
-  /* 其它界面细节（文档内的选中、悬停、表格工具等） */
   --token-text-caption: var(--text-muted);
   --token-text-placeholder: var(--text-faint);
   --token-block-placeholder: var(--text-faint);
@@ -353,7 +333,6 @@ th {
   padding-left: 20px;
 }
 
-/* Coloration du code : schéma Islands Dark */
 .token.comment {
   color: var(--text-faint);
 }
