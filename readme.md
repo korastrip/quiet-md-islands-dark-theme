@@ -11,7 +11,7 @@ git clone https://github.com/korastrip/quiet-md-islands-dark-theme.git
 **on macOs**
 
 ```bash
-cp islands-dark.css $USER/Documents/Quiet.md/.quiet/themes
+cp islands-dark.css /Users/$USER/Documents/Quiet.md/.quiet/themes
 ```
 
-Open Quiet.md, in the settings > appearance, choose dark and select islands dark in theme.
+Open Quiet.md, in the `settings` > `appearance`, choose `dark` and select `Islands dark` in theme.
